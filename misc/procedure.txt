@@ -1,0 +1,33 @@
+1. Set up the physical form
+  a. Form needs following fields x
+    i. First Name x
+    ii. Last Name x
+    iii. Date of Birth (date picker or input field depending on accessiblity) x
+    iv. Get country list from https://restcountries.eu/ and make Country of Work dropdown* x
+      1. Based on country (Spain, conditional rendering)** x
+        a. Marital Status x
+        b. Social Insurance number x
+      2. Based on country (Ghana, conditional rendering)** x
+        a. Marital Status x
+        b. Number of children x
+      3. Based on country (Brazil, conditional rendering)** x
+        a. Working hours x
+    v. Holiday allowance (30 for Spain, 40 for Brazil, min restrictions for anything else, max restrictions is 365) x
+2. Set up state for the form x
+  a. Decide how the JSON request is going to look x
+  b. Create state hooks x
+  c. Ensure there is validation on each input field. x
+  d. Construct JSON request x
+3. Write tests for the project x
+  a. Write unit tests for the form itself x
+    i. Unit tests for inputs x
+    ii. Unit tests for conditional rendering (unable to do that because of not knowing how to test Material Ui Select)
+    iii. Write tests for inputValidation util x
+4. Write README for project x
+  a. Talk about why the project was necessary x
+  b. Ensure installation is good x
+  c. Talk about how to run unit tests x
+  d. Talk about where to find proposal x
+
+*Note: Pull country from country api and put list in a json file and mark date. If new list comes in, update json file.
+**Note: Do not hard code conditional rendering. Pass a component that will do the conditional rendering and handle state for entire form in React Context.
